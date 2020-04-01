@@ -3,5 +3,3 @@ FROM golang:onbuild
 LABEL maintainer="ABHISHEK AGARWAL"
 
 EXPOSE 8080
-# Command to run the executable
-CMD ["0.0.0.0"]
