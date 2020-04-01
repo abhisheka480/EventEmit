@@ -93,7 +93,7 @@ func createEventForMurder(w http.ResponseWriter, r *http.Request) {
 }
 
 func sendEventToHandler(jsonValue []byte) error {
-	response, err := http.Post("http://localhost:8081/event", "application/json", bytes.NewBuffer(jsonValue))
+	response, err := http.Post("http://0.0.0.0:8081/event", "application/json", bytes.NewBuffer(jsonValue))
 	if err != nil {
 		fmt.Printf("The HTTP request failed with error %s\n", err)
 		return err
